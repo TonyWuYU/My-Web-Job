@@ -1,4 +1,4 @@
-# 物联智能创新产业化中心
+# 西南大学物联智能创新产业化中心
 框架集成：spring+springMVC+mybatis
 * 完成系统基础框架整个流程
 
@@ -26,6 +26,7 @@
 * json
 * InteliJ IDEA
 
+[西南大学物联智能创新中心](www.swu-ioeai.com)
 
 
 
