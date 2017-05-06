@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heart.dao.photoDao.PhotoDao">
+
+    <cache/>
+
+    <select id="loadPhotoById" parameterType="Integer" resultType="PhotoDto">
+        SELECT * FROM t_photo WHERE pid = #{pid}
+    </select>
+
+    <select id="loadPhotoListByType" parameterType="Integer" resultType="PhotoDto">
+        SELECT p.* FROM t_photo as p, t_photo_locate as l WHERE  l.locatetype = #{ptype} and p.pid=l.pid
+    </select>
+
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heart.dao.memberDao.MemberDao">
+
+   <cache/>
+
+   <select id="loadMemberById" parameterType="Integer" resultType="MemberDto">
+       SELECT * FROM t_member WHERE mid = #{mid}
+   </select>
+
+   <select id="loadMemberList" resultType="MemberDto">
+      SELECT mid,mheadphoto,mcname,mename,memail,mdirection FROM t_member
+   </select>
+
+</mapper>
